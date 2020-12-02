@@ -30,5 +30,6 @@ const lines = data
       valid: isValid(row),
     };
   });
+
 console.log(lines.filter((l) => l.valid).length);
 console.log(end.getTime() - start.getTime());
