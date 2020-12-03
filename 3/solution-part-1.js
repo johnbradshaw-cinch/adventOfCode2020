@@ -27,3 +27,5 @@ const getTrees = (acceleration, gravity) => {
 };
 
 console.log(getTrees(3, 1));
+const end = new Date();
+console.log(end.getTime() - start.getTime());

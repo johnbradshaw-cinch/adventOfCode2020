@@ -37,3 +37,5 @@ const answer = [
   .reduce((prev, next) => prev * next, 1);
 
 console.log(answer);
+const end = new Date();
+console.log(end.getTime() - start.getTime());
