@@ -31,5 +31,6 @@ const lines = data
     };
   });
 
+console.log(lines);
 console.log(lines.filter((l) => l.valid).length);
 console.log(end.getTime() - start.getTime());
