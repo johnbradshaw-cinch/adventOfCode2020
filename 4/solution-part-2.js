@@ -20,7 +20,7 @@ const validateFields = ({ byr, iyr, eyr, hgt, hcl, ecl, pid, cid }) => {
     validateHeight(hgt) &&
     /^#[0-9a-f]{6,6}/.test(hcl) &&
     /(amb|blu|brn|gry|grn|hzl|oth)/.test(ecl) &&
-    /[0-9]{9,9}/.test(pid);
+    /^[0-9]{9,9}$/.test(pid);
   return isValid;
 };
 
