@@ -1,0 +1,21 @@
+total 128
+max 127
+min 0
+
+FBFBBFFRLR
+
+F - 0 --> 63 (max - (64))
+B - 32 --> 63 (min + 32)
+F - 32 --> 47 (max - 16)
+B - 40 --> 47 (min + 8)
+B - 44 --> 47 (min + 4)
+F - 44 --> 45 (max - 2)
+F - 44 --> 44 (max - 1)
+
+total 8
+max 7
+min 0
+
+R - 4 --> 7 (min + 4)
+L - 4 --> 5 (max - 2)
+R - 5 (min + 1)
