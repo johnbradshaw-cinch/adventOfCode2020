@@ -3,15 +3,13 @@ const fs = require("fs");
 const data = fs.readFileSync("./input.txt", { encoding: "utf-8" });
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 let allAnswered = 0;
-const lines = data
+data
   .split("\n\n")
   .filter(Boolean)
   .map((line) => line.split(/\n/g).map((part) => part.split("")))
   .map((party) => ({
     participants: party.length,
-    answers: party
-      .reduce((all, next) => [...all, ...next], [])
-      .sort((a, b) => (a > b ? 1 : -1)),
+    answers: party.reduce((all, next) => [...all, ...next], []),
   }))
   .map((party) => {
     alphabet.forEach((letter) => {
